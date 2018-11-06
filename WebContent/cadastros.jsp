@@ -25,7 +25,6 @@
 				<img alt="" src="resources/img/icone-produto.png">
 			</a>
 		</div>
-		
 	</div>
 	
 	<footer>
