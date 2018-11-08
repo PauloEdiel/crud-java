@@ -9,13 +9,19 @@
 </head>
 <body>
 	<form action="cadastrarUsuario" method="post">
-		Nome: <input type="text" name="nome" /> Login : <input type="text"
-			name="login" /> Senha: <input type="password" name="senha" />
+		Nome: <input type="text" name="nome" />
+		Login : <input type="text" name="login" />
+		Senha: <input type="password" name="senha" />
 
 		<button type="submit">Enviar</button>
+		<a href="cadastrarUsuario?acao=listar">Listar Usuários</a>
+		
+		<input type="text" name="buscarNome">
+			<button type="submit">buscar</button>
+		</input>
 	</form>
 	
-		<a href="cadastrarUsuario?acao=listar">Listar Usuários</a>
+		
 	
 
 	<hr>
@@ -30,9 +36,12 @@
 				<td>${user.id}</td>
 				<td>${user.name}</td>
 				<td>${user.login}</td>
-				<td><a href="cadastrarUsuario?acao=delete&user=${user.login}">Excluir</a>
 				<td>
-				<td><a href="cadastrarUsuario?acao=editar&user=${user.login}">Editar</a>
+					<a href="cadastrarUsuario?acao=delete&user=${user.login}">Excluir</a>
+				<td>
+				<td>
+					<a href="cadastrarUsuario?acao=editar&id=${user.id}">Editar
+				</a>
 				<td>
 			</tr>
 		</c:forEach>

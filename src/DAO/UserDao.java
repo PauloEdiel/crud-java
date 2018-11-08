@@ -84,4 +84,20 @@ public class UserDao {
 
 	}
 
+	public static User buscarPorId(Integer id) {
+		String sql = "Select * from users where id = ?";
+		User user = null;
+		try (Connection conexao = ConectionFactory.getConexao();
+				PreparedStatement ps = conexao.prepareStatement(sql);) {
+			ps.setInt(1, id);
+			ResultSet rs = ps.executeQuery();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+
+	}
+
 }

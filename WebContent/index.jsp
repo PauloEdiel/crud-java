@@ -26,9 +26,6 @@
 			</form>
 		</div>
 	</div>
-	<footer>
-		<p>Esse é um projeto crud
-        &copy Paulo Cavalcante
-	</footer>
+	
 </body>
 </html>
