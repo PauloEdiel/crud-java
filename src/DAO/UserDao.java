@@ -91,13 +91,36 @@ public class UserDao {
 				PreparedStatement ps = conexao.prepareStatement(sql);) {
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();
-			
+			if (rs.next()) {
+				user = new User();
+				user.setId(rs.getInt("id"));
+				user.setLogin(rs.getString("login"));
+				user.setName(rs.getString("name"));
+				user.setPassword(rs.getString("password"));
+
+				return user;
+			}
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 
 		return null;
 
+	}
+
+	public static void atualizar(User user) {
+		String sql = "update users set name = ?, login = ? where id = " + user.getId();
+		try (Connection conexao = ConectionFactory.getConexao();
+				PreparedStatement ps = conexao.prepareStatement(sql);) {
+			ps.setString(1, user.getName());
+			ps.setString(2, user.getLogin());
+			//ps.setString(3, user.getPassword());
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace(); 
+		}
 	}
 
 }

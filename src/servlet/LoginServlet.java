@@ -31,6 +31,7 @@ public class LoginServlet extends HttpServlet {
 		if (UserDao.validaLogin(nome, senha)) {
 			RequestDispatcher view = req.getRequestDispatcher("cadastros.jsp");
 			view.forward(req, resp);
+			
 
 		} else {
 			RequestDispatcher view = req.getRequestDispatcher("index.jsp");

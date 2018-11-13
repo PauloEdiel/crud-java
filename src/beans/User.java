@@ -7,15 +7,20 @@ public class User {
 	private String login;
 	private String password;
 	
+	public User(){
+	}
 	
 	public User(String name, String login, String password) {
 		this.name = name;
 		this.login = login;
 		this.password = password;
 	}
-	
-	public User(){
-		
+
+	public User(String id, String nome, String login, String senha) {
+		this.id= Integer.parseInt(id);
+		this.name = name;
+		this.login = login;
+		this.password = password;
 	}
 
 	public String getName() {

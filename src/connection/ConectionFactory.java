@@ -8,8 +8,8 @@ public class ConectionFactory {
 	
 	public static Connection getConexao() {
 		String banco = "jdbc:mysql://localhost:3306/produtos?useSSL=false";
-		String user = "root";
-		String password = "PECS";
+		String user = "admin";
+		String password = "admin";
 
 		try {
 			try {
@@ -27,3 +27,6 @@ public class ConectionFactory {
 	}
 	
 }
+
+
+

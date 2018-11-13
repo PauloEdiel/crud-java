@@ -9,21 +9,16 @@
 </head>
 <body>
 	<form action="cadastrarUsuario" method="post">
-		Nome: <input type="text" name="nome" />
-		Login : <input type="text" name="login" />
-		Senha: <input type="password" name="senha" />
+		ID: <input type="text" name="id" value="${user.id}" />
+		Nome: <input type="text" name="nome" value="${user.name}" />
+		Login : <input type="text" name="login" value="${user.login}" />
+		Senha: <input type="password" name="senha" value="" />
 
 		<button type="submit">Enviar</button>
+		<a href="cadastrarUsuario?acao=cancelar">cancelar</a>
 		<a href="cadastrarUsuario?acao=listar">Listar Usuários</a>
-		
-		<input type="text" name="buscarNome">
-			<button type="submit">buscar</button>
-		</input>
 	</form>
 	
-		
-	
-
 	<hr>
 	<table>
 		<tr>
