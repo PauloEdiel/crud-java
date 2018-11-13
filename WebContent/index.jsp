@@ -3,8 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link  rel="stylesheet" href="resources/css/grid.css">
-<link  rel="stylesheet" href="resources/css/style.css">
+
+<link  rel="stylesheet" href="resources/css/reset.css">
+<link  rel="stylesheet" href="resources/css/index.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Tela de Login</title>
 </head>
@@ -13,11 +14,11 @@
 	<header class="menu">
 		<h2> Sistema de Cadastro</h2>
 	</header>
-	
-	<div class="container login">
-		
+		<h1 id="login">Login</h1>
+	<div class="login">
+			
 		 <div class="login-form">
-		 	<h1>Login</h1>
+		 	
 			<form action="loginServlet" method="post">
 				
 				Login: <input type="text" name="login" />

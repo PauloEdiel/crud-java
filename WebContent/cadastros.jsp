@@ -5,31 +5,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Cadastros</title>
-<link rel="stylesheet" href="resources/css/grid.css">
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/reset.css">
+<link rel="stylesheet" href="resources/css/cadastros.css">
 </head>
 <body>
-	<header class="menu">
-		<h1>Cadastros</h1>
-	
+	<header class="menu_cadastro">
+	<h1>Cadastros</h1>
+
 	</header>
-	
-	<div class="container opcoes">
+
+	<section>
+	<div class="opcoes">
 		<div class="user">
-			<a href="cadastrousuario.jsp">
-				<img alt="" src="resources/img/user-female-icon.png">
+			<a href="cadastrousuario.jsp"> <img alt=""
+				src="resources/img/user-female-icon.png">
 			</a>
 		</div>
 		<div class="produto">
-			<a href="cadastrousuario.jsp">
-				<img alt="" src="resources/img/icone-produto.png">
+			<a href="cadastrousuario.jsp"> <img alt=""
+				src="resources/img/icone-produto.png">
 			</a>
 		</div>
 	</div>
-	
-	<footer>
-		<p>Esse é um projeto crud
-        &copy Paulo Cavalcante
-	</footer>
+	</section>
+
 </body>
 </html>
