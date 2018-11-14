@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="resources/css/cadastros.css">
 </head>
 <body>
-	<header class="menu_cadastro">
+	<header class="menuCadastro">
 	<h1>Cadastros</h1>
 
 	</header>
