@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form action="cadastrarUsuario" method="post">
-		ID: <input type="text" name="id" value="${user.id}" />
+		ID: <input type="text" name="id" value="${user.id}" readonly="readonly"/>
 		Nome: <input type="text" name="nome" value="${user.name}" />
 		Login : <input type="text" name="login" value="${user.login}" />
 		Senha: <input type="password" name="senha" value="" />

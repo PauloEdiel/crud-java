@@ -15,19 +15,19 @@
 	</header>
 
 	<section>
-	<div class="opcoes">
+	<div class="opcoes container">
 		<div class="user">
-			<a href="cadastrousuario.jsp"> <img alt=""
-				src="resources/img/user-female-icon.png">
+			<a href="cadastrousuario.jsp"> <img alt="Imagem do usuário" src="resources/img/user.png">
 			</a>
 		</div>
 		<div class="produto">
-			<a href="cadastrousuario.jsp"> <img alt=""
-				src="resources/img/icone-produto.png">
+			<a href="cadastrousuario.jsp"> <img alt="Imagem icone produto" src="resources/img/AddProduto.png">
 			</a>
 		</div>
 	</div>
 	</section>
+	
+	
 
 </body>
 </html>
