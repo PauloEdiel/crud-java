@@ -21,7 +21,7 @@
 			</a>
 		</div>
 		<div class="produto">
-			<a href="cadastrousuario.jsp"> <img alt="Imagem icone produto" src="resources/img/AddProduto.png">
+			<a href="cadastroprodutos.jsp"> <img alt="Imagem icone produto" src="resources/img/AddProduto.png">
 			</a>
 		</div>
 	</div>

@@ -1,0 +1,110 @@
+body {
+	font-family: sans-serif;
+	background: #eee;
+	
+}
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+.container::after,.container::before {
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.menuCadastro {
+	background-color: #11a1e4;
+	padding: 20px 0;
+	color: #f7fbfb;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	
+}
+
+
+.boxCadastro {
+  max-width: 30%;
+  margin: 10px 10px 20px 10px;
+  background: #fff;
+  float: left;
+
+}
+
+.boxCadastro>form {
+  width: 85%;
+  margin: auto;
+  padding: 5%;
+}
+
+.boxCadastro fieldset {
+  border: 0;
+}
+
+.boxCadastro legend {
+  margin-bottom: 10%;
+  font-size: 1.8em;
+  color: #11a1e4;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.boxCadastro input[type="text"], .boxCadastro input[type="password"] {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 8px 8px;
+  margin: 5px 0;
+  font-size: 1.125em;
+}
+
+.boxCadastro input::placeholder {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.boxCadastro button[type="submit"] {
+  border: 0;
+}
+
+.btn:hover {
+  background-color: #0083c0;
+  transition: 1s;
+}
+.btn {
+	display:block;
+	padding: 10px 15px;
+	background-color: #11a1e4;
+	width:100%;
+	margin-top: 2px;
+	text-decoration: none;
+	font-size: 1.125em;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+    cursor: pointer;
+		
+}
+.btnCancelar {
+	padding: 12px 15px;
+}
+
+.btnCancelar {
+	padding: 12px 15px;
+}
+
+.btnListar{
+	padding: 14px 15px;
+}
+.boxTable {
+	float: left;
+	margin-left: 10px;
+
+}
