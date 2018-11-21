@@ -13,6 +13,7 @@ import connection.ConectionFactory;
 public class UserDao {
 
 	public static boolean validaLogin(String login, String senha) {
+
 		String sql = "select * from users where login = ? and password = ?";
 		try (Connection conexao = ConectionFactory.getConexao();
 				PreparedStatement ps = conexao.prepareStatement(sql);) {
@@ -23,6 +24,22 @@ public class UserDao {
 				return true;
 			}
 
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
+	public static boolean userExiste(String login) {
+		String sql = "select * from users where login = ?";
+		try (Connection conexao = ConectionFactory.getConexao();
+				PreparedStatement ps = conexao.prepareStatement(sql);) {
+			ps.setString(1, login);
+			ResultSet rs = ps.executeQuery();
+			if (rs.next()) {
+				return true;
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -115,11 +132,11 @@ public class UserDao {
 				PreparedStatement ps = conexao.prepareStatement(sql);) {
 			ps.setString(1, user.getName());
 			ps.setString(2, user.getLogin());
-			//ps.setString(3, user.getPassword());
+			// ps.setString(3, user.getPassword());
 			ps.executeUpdate();
 
 		} catch (SQLException e) {
-			e.printStackTrace(); 
+			e.printStackTrace();
 		}
 	}
 

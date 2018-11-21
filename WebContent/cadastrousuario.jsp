@@ -15,6 +15,7 @@
 	</header>
 	
 	<div class="container">
+	<h1>${msg}</h1>
 		<div class="boxCadastro">
 			<form action="cadastrarUsuario" method="post">
 				ID: <input type="text" name="id" value="${user.id}" readonly="readonly"/>

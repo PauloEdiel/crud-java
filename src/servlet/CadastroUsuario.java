@@ -89,10 +89,19 @@ public class CadastroUsuario extends HttpServlet {
 			user.setName(nome);
 			user.setLogin(login);
 			user.setPassword(senha);
-			UserDao.inserir(user);
-			System.out.println("Usuário Inserido");
-			req.setAttribute("usuarios", UserDao.listar());
-			view.forward(req, resp);
+
+			if (UserDao.userExiste(login)) {
+				req.setAttribute("msg", "Já existe um usuário com esse Login");
+				view.forward(req, resp);
+
+			} else {
+
+				UserDao.inserir(user);
+				System.out.println("Usuário Inserido");
+				req.setAttribute("usuarios", UserDao.listar());
+				view.forward(req, resp);
+
+			}
 
 		}
 
