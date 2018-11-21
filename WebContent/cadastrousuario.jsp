@@ -29,8 +29,8 @@
 		</div> <!--End box Cadastro  -->
 		
 		<div class="boxTable">
-			<table>
-				<tr>
+			<table class="table">
+				<tr class="cabecalho">
 					<td>Id</td>
 					<td>Nome</td>
 					<td>Login</td>
