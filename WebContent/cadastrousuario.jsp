@@ -41,7 +41,7 @@
 					<td>${user.name}</td>
 					<td>${user.login}</td>
 					<td>
-					<a href="cadastrarUsuario?acao=delete&user=${user.login}">Excluir</a>
+					<a href="cadastrarUsuario?acao=delete&id=${user.id}">Excluir</a>
 					<td>
 					<td>
 					<a href="cadastrarUsuario?acao=editar&id=${user.id}">Editar

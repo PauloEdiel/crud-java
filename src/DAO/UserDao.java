@@ -88,16 +88,17 @@ public class UserDao {
 		return null;
 	}
 
-	public static void delete(String login) {
-		String sql = "delete from users where login = '" + login + "'";
+	public static void delete(Integer id) {
+		String sql = "delete from users where id = ?";
 		try {
 			Connection conexao = ConectionFactory.getConexao();
 			PreparedStatement preparedStatement = conexao.prepareStatement(sql);
+			preparedStatement.setInt(1, id);
 			preparedStatement.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		System.out.println(login);
+		//System.out.println(login);
 
 	}
 

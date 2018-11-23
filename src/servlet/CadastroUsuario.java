@@ -34,9 +34,11 @@ public class CadastroUsuario extends HttpServlet {
 			break;
 
 		case "delete":
-			if (!login.isEmpty()) {
-				UserDao.delete(login);
-			}
+			Integer numId = Integer.parseInt(request.getParameter("id"));
+			//if (!login.isEmpty()) {
+			System.out.println(numId);
+			UserDao.delete(numId);
+			//}
 			request.setAttribute("usuarios", UserDao.listar());
 			view.forward(request, response);
 			System.out.println("Login deletado -> " + login);
